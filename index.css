@@ -554,7 +554,8 @@ body:not(.user-is-tabbing) a:focus {
 
 @media(min-width: 901px) {
     .about__text {
-        flex: 0 0 35%;
+        /*flex: 0 0 35%;*/
+        flex: 1;
     }
     
     .about__photo-container {
@@ -568,7 +569,8 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .contact__info {
-    max-width: var(--container-medium-width);
+    /*max-width: var(--container-medium-width);*/
+    flex: 1;
 }
 
 /* --------------------------------------- */
