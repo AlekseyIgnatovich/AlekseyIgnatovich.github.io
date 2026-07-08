@@ -627,3 +627,108 @@ body:not(.user-is-tabbing) a:focus {
     padding: 1.5rem;
     border-radius: 8px;
 }
+
+.experience {
+    padding: 4rem 0;
+    background: #0a0a0a;
+    color: #e0e0e0;
+}
+
+.experience h2 {
+    color: var(--white);
+}
+
+.timeline {
+    position: relative;
+    margin-top: 2rem;
+    padding-left: 1.7rem;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2rem;        /* отступ сверху */
+    bottom: 2rem;     /* отступ снизу */
+    width: 3px;
+    background: var(--white);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2.5rem;
+    padding-left: 1.5rem;
+}
+
+.timeline-item:before {
+    content: "";
+    position: absolute;
+    left: -2.65rem;
+    top: 1rem;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--white);
+    border: 3px solid #0a0a0a;
+    box-shadow: 0 0 0 2px var(--white);
+}
+
+.timeline-date {
+    display: inline-block;
+    font-size: 1.8rem;
+    color: #888;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+.timeline-content h3 {
+    margin: 0 0 0.2rem 0;
+    color: var(--white);
+    font-size: 2.4rem;
+}
+
+.timeline-content h4 {
+    margin: 0 0 0.8rem 0;
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.timeline-content p {
+    margin: 0 0 0.8rem 0;
+    color: #ccc;
+    font-size: 1.9rem;
+    line-height: 1.5;
+}
+
+.timeline-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-content li {
+    position: relative;
+    padding: 0.5rem 0 0.5rem 2rem;
+    color: #ccc;
+    font-size: 1.9rem;
+    line-height: 1.5;
+}
+
+.timeline-content li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: var(--white-1);
+}
+
+.timeline-content a {
+    color: #00d4ff;
+    text-decoration: none;
+}
+
+.timeline-content a:hover {
+    color: var(--white);
+    text-decoration: underline;
+}
